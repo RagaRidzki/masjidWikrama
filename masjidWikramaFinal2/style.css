@@ -1,0 +1,385 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    /* box-sizing: border-box; */
+}
+
+body {
+    /* margin: 0px;
+    padding: 0px; */
+    min-height: 100vh;
+    font-family: 'Latto', sans-serif;
+}
+
+.header {
+    /* min-height: 100vh; */
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand img {
+    width: 60px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 16px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #222;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #1D267D;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+nav .fa-solid {
+    display: none;
+}
+
+/* Awal */
+.about {
+    width: 80%;
+    text-align: left;
+    padding-top: 100px;
+}
+
+.about h1 {
+    font-size: 70px;
+    font-weight: 600;
+
+}
+
+.about h1 span {
+    color: #1D267D;
+}
+
+.about p {
+    color: #777;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+/* Button */
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #1D267D;
+    border: 1px solid #1D267D;
+    padding: 12px 34px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    font-size: 20px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 5px;
+}
+
+.hero-btn:hover {
+    border: 1px solid #fff;
+    background: #FCD900;
+    color: #222;
+    transition: 0.4s;
+}
+
+/* Image Dasboard */
+.aboutme-col {
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.aboutme-col img {
+    position: relative;
+    bottom: 480px;
+    left: 850px;
+    width: 400px;
+    border-radius: 5px;
+}
+
+.aboutme-col h1 {
+    padding-top: 0;
+}
+
+.aboutme-col p {
+    padding: 15px 0 25px;
+}
+
+/* Target */
+.target {
+    position: relative;
+    bottom: 350px;
+}
+
+.target .card .card-body {
+    padding: 30px;
+}
+
+.target .card .card-body .hstack .card-text2,
+.card-text3 {
+    margin-left: 350px;
+}
+
+.target .card .card-body .hstack .title2,
+.title3 {
+    margin-left: 200px;
+}
+
+.target .card .card-body .hstack .title3 {
+    margin-left: 270px;
+}
+
+.target .card .card-footer {
+    padding: auto;
+    height: 100%;
+    background-color: #1D267D;
+}
+
+.target .card .card-footer marquee {
+    color: #fff;
+    width: 100%;
+}
+
+.target .card .card-footer marquee {
+    list-style: none;
+    display: flex;
+    padding: 0 16px;
+    position: relative;
+}
+
+.target .card .card-footer marquee span {
+    color: #FCD900;
+}
+
+
+.target .card .card-body .card-title {
+    font-size: 40px;
+}
+
+.target .card .card-body .card-text {
+    font-size: 18px;
+}
+
+/* Progress */
+.progress .progress-bar {
+    background-color: #1D267D;
+}
+
+/* Banner */
+.carousel,
+.carousel-inner,
+.carousel-control-prev,
+.carousel-control-next {
+    position: relative;
+    border-radius: 10px;
+    bottom: 120px;
+}
+
+/* Manfaat Wakaf */
+.manfwakaf {
+    width: 80%;
+    text-align: left;
+    position: relative;
+    bottom: 100px;
+}
+
+.manfwakaf h1 {
+    font-size: 50px;
+    font-weight: 600;
+
+}
+
+.manfwakaf h1 span {
+    color: #1D267D;
+}
+
+.manfwakaf p {
+    color: #777;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/* Cara Wakaf */
+.crwakaf {
+    width: 80%;
+    text-align: left;
+    padding-top: 100px;
+    position: relative;
+    bottom: 100px;
+    margin-bottom: 50px;
+}
+
+.crwakaf h1 {
+    font-size: 50px;
+    font-weight: 600;
+
+}
+
+.crwakaf h1 span {
+    color: #1D267D;
+}
+
+.crwakaf .text p {
+    color: #777;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.crwakaf .row .col .card {
+    background-color: #fff;
+    padding: 10px;
+    top: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.crwakaf .row .col .card .card-body .card-number {
+    color: #1D267D;
+}
+
+/* Data Wakaf */
+.dtwakaf {
+    width: 80%;
+    text-align: left;
+    padding-top: 50px;
+    position: relative;
+    bottom: 60px;
+    margin-bottom: 60px;
+}
+
+.dtwakaf h1 {
+    font-size: 50px;
+    font-weight: 600;
+
+}
+
+.dtwakaf h1 span {
+    color: #1D267D;
+}
+
+.dtwakaf p {
+    color: #777;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.dtwakaf .table {
+    padding: 50px;
+    text-align: center;
+    padding: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.dtwakaf table thead tr th {
+    background-color: #1D267D;
+    color: #fff;
+}
+
+/* Gallery */
+.gallery {
+    width: 80%;
+    text-align: left;
+    padding-top: 50px;
+    position: relative;
+    bottom: 60px;
+}
+
+.gallery h1 {
+    font-size: 50px;
+    font-weight: 600;
+
+}
+
+.gallery h1 span {
+    color: #1D267D;
+}
+
+.gallery p {
+    color: #777;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 60px;
+}
+
+
+.gallery .row .col .card img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Footer */
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer-main {
+    background-color: #1D267D;
+    padding: 24px 60px;
+    color: white;
+
+
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 10px;
+    margin: 0 auto;
+    max-width: 100%;
+    justify-items: center;
+}
+
+@media (max-width: 1024px) {
+    .footer-grid {
+        padding-left: 20px;
+    }
+}
+
+.footer-grid p {
+    margin: 10px 0;
+}
+
+.footer-bottom {
+    background-color: #213363;
+    /* width: 100vw; */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 20px;
+    color: #fff
+}
+
+.footer-bottom span {
+    opacity: .4;
+    color: #fff;
+}
